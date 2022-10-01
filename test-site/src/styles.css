@@ -1,5 +1,7 @@
 :root {
-  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --font-family: "Montserrat", sans-serif;
+  --box-shadow-one: 0 3px 10px whitesmoke;
+  --box-shadow-two: 0 3px 12px #cd5d9c;
   --background-color: #000000;
   --text-shadow: 0 1px 0px #378ab4, 1px 0 0px #5dabcd, 1px 2px 1px #378ab4,
     2px 1px 1px #cd5d9d, 2px 3px 2px #cd5d9d, 3px 2px 2px #cd5d9d,
@@ -8,10 +10,16 @@
     6px 7px 1px #cd5d9d, 7px 6px 1px #cd5d9d, 7px 8px 0px #cd5d9d,
     8px 7px 0px #cd5d9d;
 }
+
 body {
   background-color: var(--background-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-family);
 }
+
+.img {
+  text-align: center;
+}
+
 h1,
 h2,
 h3 {
@@ -31,7 +39,14 @@ h1 {
 
 h2 {
   font-size: 50px;
-  margin-top: 120px;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  padding-top: 2%;
+}
+
+h1.about-page {
+  font-size: 80px;
+  margin-top: 80px;
   margin-bottom: 9px;
   padding-top: 2%;
 }
@@ -41,6 +56,7 @@ h3 {
   font-weight: bolder;
 }
 .fullstop {
+  font: var(--font);
   color: #66bfbf;
 }
 .flex-container {
@@ -49,27 +65,42 @@ h3 {
   justify-content: center;
   flex-direction: row;
 }
-.button-1,
+
+a.button-1,
 .button-2 {
   padding: 20px;
   border-radius: 4%;
   margin: 0 20px;
   text-align: center;
   text-decoration: none;
-  font: 16px "Montserrat", sans-serif;
-  text-shadow: var(--text-shadow);
-}
-a.button-1 {
-  background-color: #bd1e6f;
-  color: white;
-  box-shadow: var(--box-shadow);
-}
-a.button-2 {
-  background-color: white;
-  color: rgb(238, 142, 196);
-  border: 1px solid blueviolet;
+  font-size: 18px;
 }
 
-p {
+a.button-1 {
+  background-color: #cd5d9c;
   color: white;
+  border: 1px solid whitesmoke;
+  box-shadow: var(--box-shadow-one);
+}
+
+a.button-2 {
+  border: 1px solid blueviolet;
+  background-color: whitesmoke;
+  color: rgb(238, 142, 196);
+  box-shadow: var(--box-shadow-two);
+}
+
+footer,
+p.back-to-links,
+a.email,
+p.back-to-links {
+  text-align: center;
+}
+
+.about-item-one,
+.about-item-two {
+  color: white;
+  background: #cd5d9c;
+  margin: 0 20px;
+  padding: 20px;
 }
