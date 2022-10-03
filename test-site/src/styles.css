@@ -1,6 +1,8 @@
 :root {
   --font-family: "Montserrat", sans-serif;
   --box-shadow-one: 0 3px 10px #cd5d9c;
+  --box-shadow-two: 0 0 60px 30px #fff, /* inner white */ 0 0 100px 60px #ff00ff,
+    /* middle magenta */ 0 0 140px 90px #0ff; /* outer cyan */
   --background-color: #000000;
 }
 
@@ -55,6 +57,17 @@ section {
   text-align: center;
   box-shadow: var(--box-shadow-one);
   border-radius: 100%;
+}
+
+section:hover {
+  padding: 4.5% 0% 7%;
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+  box-shadow: var(--box-shadow-two);
+  background: whitesmoke;
+  transition: 0.4s;
+  opacity: 0.6;
 }
 
 .img {
@@ -127,21 +140,9 @@ a:hover.button-2 {
   padding-top: 2%;
   margin: 0 20px;
 }
-section:hover {
-  padding: 4.5% 0% 7%;
-  margin-top: 20px;
-  background-color: black;
-  text-align: center;
-  box-shadow: var(--box-shadow-one);
-  border: 1px solid #cd5d9c;
-  border-radius: 100%;
-  background: whitesmoke;
-}
+
 .flex-container-2 {
   padding-top: 100px;
-  display: flex;
-  justify-content: space-evenly;
-  border-radius: 100%;
   padding: 4.5% 0% 7%;
 }
 footer,
