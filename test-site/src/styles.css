@@ -49,10 +49,12 @@ h3 {
 
 section {
   padding: 4.5% 0% 7%;
+  margin-top: 20px;
   background-color: black;
   color: #000;
   text-align: center;
   box-shadow: var(--box-shadow-one);
+  border-radius: 100%;
 }
 
 .img {
@@ -109,24 +111,12 @@ a:hover.button-2 {
   background: black;
   opacity: 0.9;
   border-radius: 4px;
-  margin: 50px;
+  margin: 40px;
   padding: 20px;
   text-align: center;
   box-shadow: var(--box-shadow-one);
 }
 
-.tech-stack {
-  color: white;
-  position: relative;
-  right: 25%;
-}
-
-.tech-stack-items {
-  color: white;
-  position: relative;
-  left: 1%;
-  font-size: 18px;
-}
 .projects {
   color: whitesmoke;
 }
@@ -137,11 +127,22 @@ a:hover.button-2 {
   padding-top: 2%;
   margin: 0 20px;
 }
-
+section:hover {
+  padding: 4.5% 0% 7%;
+  margin-top: 20px;
+  background-color: black;
+  text-align: center;
+  box-shadow: var(--box-shadow-one);
+  border: 1px solid #cd5d9c;
+  border-radius: 100%;
+  background: whitesmoke;
+}
 .flex-container-2 {
   padding-top: 100px;
   display: flex;
   justify-content: space-evenly;
+  border-radius: 100%;
+  padding: 4.5% 0% 7%;
 }
 footer,
 p.back-to-links,
