@@ -64,12 +64,6 @@ section:hover {
   text-align: center;
 }
 
-.img {
-  text-align: center;
-  box-shadow: var(--box-shadow-one);
-  border-radius: 100%;
-}
-
 .i-am {
   text-align: left;
 }
@@ -85,11 +79,6 @@ section:hover {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-}
-
-.flex-container-2 {
-  padding-top: 100px;
-  padding: 4.5% 0% 7%;
 }
 
 a.button-1,
